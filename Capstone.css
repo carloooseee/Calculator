@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Staatliches&display=swap');
+/*font-family: 'Staatliches', cursive;*/
+body{
+    margin: 0px;
+}
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:25.2%;
+    flex-direction: column;
+    border: 2.1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+
+}
+.keys{
+    border: none;
+    padding: auto;
+    transition: all 0.3s ease-in-out;
+}
+.keys1{
+    font-size: 40px;
+    font-family: 'Staatliches', cursive;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-right: 60px;
+    background-color: rgb(213, 213, 213);
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.keys1:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+input[type="text"]{
+    border: 1px solid;
+    width: 85.5%;
+    font-size: 40px;
+    font-family: 'Staatliches', cursive;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding-right: 43px;
+    background-color: rgb(219, 219, 219);
+    transition: all 0.3s ease-in-out;
+}
+input[type="text"]:hover{
+    background-color: rgb(223, 223, 223);
+    box-shadow: 0px 0px 0px 320px  rgb(0, 0, 0);
+}
+input[type="text"]:hover + .keys1{
+    background-color: aliceblue;
+}
+#logo{
+    border: none;
+}
+#logo:hover{
+    box-shadow: 0px 0px 0px 300px  rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+}
+#resulto1::after{
+    content: "asdasd";
+}
+#resulto1{
+    color: black;
+}
+#resulto1:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+#resulto1:hover + button{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+#ppp{
+    font-family: 'Staatliches', cursive;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-86%, -670%);
+    font-size: 30px;
+    transition: all .3s ease-in-out;
+}
+#resulto1:hover + #ppp{
+    display: inline;
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 15px #ffffff);
+}
