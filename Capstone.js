@@ -1,7 +1,6 @@
 let result = document.getElementById("resulto1");
 
 let paren = true;
-
 function addParen() {
   if (paren) {
     result.value += '(';
