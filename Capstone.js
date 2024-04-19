@@ -20,3 +20,8 @@ function clearResult() {
 function calculate() {
   result.value = eval(result.value);
 }
+function backspace() {
+  var inputField = document.getElementById("resulto1");
+  var currentValue = inputField.value;
+  inputField.value = currentValue.slice(0, -1);
+}
