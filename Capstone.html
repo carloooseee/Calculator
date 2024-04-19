@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="Capstone.css">
-    <title>SCI SCI</title>
+    <title>Capstone 1</title>
 </head>
 <script src="scijs.js"></script>
 <body>
     <div class="body">
-            <input style="padding-left: 35px; padding-right: 10px;"type="text" id="resulto1">
-            <p id="ppp">CALCULATOR ಠ益ಠ</p>
+        <input style="padding-left: 35px; padding-right: 10px;"type="text" id="resulto1">
+        <p id="ppp">CALCULATOR ಠ益ಠ</p>
         <div class="keys">
-            <button onclick="addNumber(1)" style="padding-right: 69.5px;"class="keys1">1</button>
+            <button onclick="addNumber(1)" class="keys1">1</button>
             <button onclick="addNumber(2)" class="keys1">2</button>
             <button onclick="addNumber(3)"class="keys1">3</button>
-            <button onclick="addNumber('+')"class="keys1">+</button>
+            <button onclick="addNumber('+')"class="keys1" id="addition">+</button>
 
             <button onclick="addNumber(4)" class="keys1">4</button>
             <button onclick="addNumber(5)" class="keys1">5</button>
             <button onclick="addNumber(6)" class="keys1">6</button>
-            <button onclick="addNumber('-')" class="keys1">−</button>
+            <button onclick="addNumber('-')" class="keys1" id="subtraction">−</button>
 
             <button onclick="addNumber(7)" class="keys1">7</button>
             <button onclick="addNumber(8)" class="keys1">8</button>
             <button onclick="addNumber(9)" class="keys1">9</button>
-            <button onclick="addNumber('/')"class="keys1">÷</button>
+            <button onclick="addNumber('*')" class="keys1" id="multiplication">×</button>
 
-            <button onclick="addNumber(0)" class="keys1">0</button>
-            <button onclick="calculate()"class="keys1">=</button>
-            <button onclick="clearResult()"class="keys1">AC</button>
-            <button onclick="addNumber('*')" class="keys1">×</button>
-            <button onclick="addParen()"class="keys1">( )</button>
+            <button onclick="addParen()"class="keys1" id="paren">( )</button>
+            <button onclick="addNumber(0)" class="keys1" id="zero">0</button>
+            <button onclick="addNumber('.')" class="keys1" id="decimal">.</button>
+            <button onclick="addNumber('/')"class="keys1" id="division">÷</button>
+
+            <button onclick="backspace()" class="keys1" id="del">Del</button>
+            <button onclick="clearResult()"class="keys1" id="ac">AC</button>
+            <button onclick="calculate()"class="keys1" id="equals">=</button>
+            
         </div>
     </div>
     <script src="Capstone.js"></script>
