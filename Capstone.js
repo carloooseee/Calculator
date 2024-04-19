@@ -14,6 +14,7 @@ function addNumber(num) {
   result.value += num;
 }
 function clearResult() {
+  paren = true;
   result.value = "";
 }
 function calculate() {
