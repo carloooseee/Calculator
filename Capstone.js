@@ -1,20 +1,20 @@
 let result = document.getElementById("resulto1");
 
-let paren = true;
+let parenthesisIncluded = true;
 function addParen() {
-  if (paren) {
+  if (parenthesisIncluded) {
     result.value += '(';
-    paren = false;
+    parenthesisIncluded  = false;
   } else {
     result.value += ')';
-    paren = true;
+    parenthesisIncluded  = true;
   }
 }
 function addNumber(num) {
   result.value += num;
 }
 function clearResult() {
-  paren = true;
+  parenthesisIncluded = true;
   result.value = "";
 }
 function calculate() {
