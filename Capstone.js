@@ -21,7 +21,7 @@ function calculate() {
   result.value = eval(result.value);
 }
 function backspace() {
-  var inputField = document.getElementById("resulto1");
-  var currentValue = inputField.value;
+  let inputField = document.getElementById("resulto1");
+  let currentValue = inputField.value;
   inputField.value = currentValue.slice(0, -1);
 }
