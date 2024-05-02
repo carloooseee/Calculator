@@ -112,20 +112,3 @@ input[type="text"]:hover{
     color: rgb(255, 255, 255);
     background-color: black;
 }
-
-#ppp{
-    font-family: 'Staatliches', cursive;
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-86%, -670%);
-    font-size: 30px;
-    transition: all .3s ease-in-out;
-}
-
-#resulto1:hover + #ppp{
-    display: inline;
-    color: #ffffff;
-    filter: drop-shadow(0px 0px 15px #ffffff);
-}
